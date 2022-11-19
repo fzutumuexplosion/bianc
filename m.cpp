@@ -23,9 +23,10 @@ int main(){
 	//输入 
 	InputUI();
 	cin>>a;
+	getchar();
 	//输入检测
 	flag=judge(a);
-	cout<<flag;
+	//cout<<flag;
 	if(flag==-1){
 		//错误 
 		ErrorUI();
@@ -57,6 +58,7 @@ int main(){
 	OutputUI(target);
 	//询问是否再次使用
 	AskUI();
+	
 	b=getchar();
 	getchar();
 	if(b=='!'){
