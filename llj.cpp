@@ -20,7 +20,7 @@ string check(string num){
 	long long int n=my_atoi(num); 
 	if (n >= 100000000){//大于一亿 
 		hundredbillionmaxprint(n);
-	}	
+	}
 	else{
 		if (n >= 10000)//大于一万 
 			tenthousandmaxprint(n,0);

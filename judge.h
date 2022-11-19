@@ -3,7 +3,7 @@
 //#include<string>
 //#include<cstring>
 //using namespace std;
-//int ifisdaxie(string s);
+//int ifisxiaoxie(string s);
 
 //int main()
 //{
@@ -25,33 +25,32 @@
 
 
 
-int judge(string s )
-{
-	int flag;
-	if (ifisxiaoxie(s))
-	{
-		return 1; // «∫œ∑®–°–¥
-	}
-	else
-	{
-		return 0;
-	}
-//	if(ifisdaxie(s))
+//int judge(string s ){
+//	int flag;
+//	if (ifisxiaoxie(s))
 //	{
-// 	    return 0;// «∫œ∑®¥Û–¥
+//		return 1; // «∫œ∑®–°–¥
 //	}
-//	return -1; // ‰»Î≤ª∫œ∑®
-}
+//	else
+//	{
+//		return 0;
+//	}
+////	if(ifisdaxie(s))
+////	{
+//// 	    return 0;// «∫œ∑®¥Û–¥
+////	}
+////	return -1; // ‰»Î≤ª∫œ∑®
+//}
 
 
-bool ifisxiaoxie(string input)
+int ifisxiaoxie(string input)
 {
 	int flag=0;
 	int i=0;
 	while(i<input.size())
 	{
 		if(!isdigit(input[i])){
-		cout<<" ‰»Î¥ÌŒÛ";
+//		cout<<" ‰»Î¥ÌŒÛ";
 		return 0;
 		}
 		i++;
@@ -59,41 +58,41 @@ bool ifisxiaoxie(string input)
 	if(flag==1)return 1;
 
 }
-
-int ifisdaxie(string s)
-{
-	
- 	string a = {"¡„", "“º", "∑°", "»˛", "À¡", "ŒÈ", "¬Ω", "∆‚", "∞∆", "æ¡"," ∞"};
-	string unit = {"‘™", " ∞", "∞€", "«™", "ÕÚ", " ∞", "∞€", "«™", "“⁄", " ∞", "∞€", "«™", "’◊", " ∞", "∞€", "«™" };
-	char sav[20];
-	int i=0;
-	int len = s.length();
-    while(len--)
-    {
-    	string *b = &s[len];
-
-		if(strstr(unit.c_str(),b)==NULL)
-		{
-
-		 	if(strstr(a.c_str(),b)==NULL)
-		 	{
-			    return 0;
-            }
-			 else
-			 {
-			 	continue;
-			 }
-		}
-		else
-		{
-			sav[i++]=b;
-			continue;
-			
-		}
-		
-	
-	}
-	
+//
+//int ifisdaxie(string s)
+//{
+//	
+// 	string a = {"¡„", "“º", "∑°", "»˛", "À¡", "ŒÈ", "¬Ω", "∆‚", "∞∆", "æ¡"," ∞"};
+//	string unit = {"‘™", " ∞", "∞€", "«™", "ÕÚ", " ∞", "∞€", "«™", "“⁄", " ∞", "∞€", "«™", "’◊", " ∞", "∞€", "«™" };
+//	char sav[20];
+//	int i=0;
+//	int len = s.length();
+//    while(len--)
+//    {
+//    	string *b = &s[len];
+//
+//		if(strstr(unit.c_str(),b)==NULL)
+//		{
+//
+//		 	if(strstr(a.c_str(),b)==NULL)
+//		 	{
+//			    return 0;
+//            }
+//			 else
+//			 {
+//			 	continue;
+//			 }
+//		}
+//		else
+//		{
+//			sav[i++]=b;
+//			continue;
+//			
+//		}
+//		
+//	
+//	}
+//	
 	
 //	int n;
 //	n = strlen(sav);
@@ -112,26 +111,26 @@ int ifisdaxie(string s)
 //	q = &sav;
 //	int j=0;
 
-	for(int i=0;i<n;i++;)
-	{
-		while(q!=NULL)
-		{
-			if (*p = *q)
-			{
-				p++;
-				q++;
-                break£ª
-			}
-			else
-			{
-				q++
-			}
-		}
-		if(q==NULL)
-		{
-			return 0 ;
-		}
-	}
-	return 1;
-}
+//	for(int i=0;i<n;i++;)
+//	{
+//		while(q!=NULL)
+//		{
+//			if (*p = *q)
+//			{
+//				p++;
+//				q++;
+//                break£ª
+//			}
+//			else
+//			{
+//				q++
+//			}
+//		}
+//		if(q==NULL)
+//		{
+//			return 0 ;
+//		}
+//	}
+//	return 1;
+//}
 
