@@ -5,12 +5,13 @@
 #include"xiaoxie.h"
 #include"llj.cpp"
 #include"UI.h"
+#include"tosm.cpp"
 //#include"judge.h"
 using namespace std;
 int main(){
 	char b;
 	AcceptUI();
-	int flag=1;
+	int flag=0;
 	string a,target;
 	b=getchar();
 	getchar();
@@ -23,8 +24,8 @@ int main(){
 	InputUI();
 	cin>>a;
 	// ‰»ÎºÏ≤‚
-//	flag=judge(a);
-//	cout<<flag;
+	flag=judge(a);
+	cout<<flag;
 	if(flag==-1){
 		//¥ÌŒÛ 
 		ErrorUI();
@@ -43,7 +44,7 @@ int main(){
 	}
 	else if(flag==0){
 		//¥Û–¥ 
-		//target=toSmall(a);
+		target=ToNum(a);
 		
 	}
 	else{
